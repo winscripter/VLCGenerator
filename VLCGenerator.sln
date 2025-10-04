@@ -5,8 +5,6 @@ VisualStudioVersion = 18.0.11018.127
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "winscripter.VariableLengthCodeGenerator.Core", "winscripter.VariableLengthCodeGenerator.Core\winscripter.VariableLengthCodeGenerator.Core.csproj", "{2F9D31D4-5DC1-B184-8106-A258D3923329}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "winscripter.VariableLengthCodeGenerator.SampleProject", "winscripter.VariableLengthCodeGenerator.SampleProject\winscripter.VariableLengthCodeGenerator.SampleProject.csproj", "{34071C34-7116-C90E-339E-BC4B17B09D25}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "winscripter.VariableLengthCodeGenerator.Tests", "winscripter.VariableLengthCodeGenerator.Tests\winscripter.VariableLengthCodeGenerator.Tests.csproj", "{F6B3C6CA-80A0-6CA1-4117-B4C5FC3E762F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{089100B1-113F-4E66-888A-E83F3999EAFD}"
@@ -26,10 +24,6 @@ Global
 		{2F9D31D4-5DC1-B184-8106-A258D3923329}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2F9D31D4-5DC1-B184-8106-A258D3923329}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2F9D31D4-5DC1-B184-8106-A258D3923329}.Release|Any CPU.Build.0 = Release|Any CPU
-		{34071C34-7116-C90E-339E-BC4B17B09D25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{34071C34-7116-C90E-339E-BC4B17B09D25}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{34071C34-7116-C90E-339E-BC4B17B09D25}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{34071C34-7116-C90E-339E-BC4B17B09D25}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F6B3C6CA-80A0-6CA1-4117-B4C5FC3E762F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F6B3C6CA-80A0-6CA1-4117-B4C5FC3E762F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F6B3C6CA-80A0-6CA1-4117-B4C5FC3E762F}.Release|Any CPU.ActiveCfg = Release|Any CPU
