@@ -1,0 +1,15 @@
+﻿@namespace MyCompany.MyProduct.VlcSerializers
+@class SampleVlcSerializer
+@visibility public
+@readerType winscripter.VariableLengthCodeGenerator.SampleProject.IBitstream
+@readBitMethod Read
+@writerType winscripter.VariableLengthCodeGenerator.SampleProject.IBitstream
+@writeBitMethod Write
+
+0 0
+1 10
+2 110
+3 11110
+4 11100
+5 11101
+6 11111
