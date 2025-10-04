@@ -112,6 +112,15 @@ file formats and video codecs in C#. Examples:
 
 <hr />
 
-Made with .NET 8, Visual Studio 2026, and Windows 11.
+# License
+MIT License
+
+Copyright (c) 2023-2025, winscripter
+
+See LICENSE.txt for license details.
+
+<hr />
+
+Made with .NET 8 and Visual Studio 2026.
 
 Made by winscripter.
