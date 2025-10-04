@@ -1,4 +1,4 @@
-﻿# VLCGenerator: Generate Variable Length Code (VLC) I/O in C#
+﻿# VLCGenerator: Generate Variable Length Code Table I/O in C#
 This is a tool that takes a Domain-Specific Language representing a number
 to Variable Length Code (VLC) table and produces C# code to read/write those
 VLCs at bit level. It is highly customizable, and best of all - produces C# code
