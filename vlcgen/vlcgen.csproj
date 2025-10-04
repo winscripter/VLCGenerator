@@ -17,12 +17,14 @@
     <PackAsTool>True</PackAsTool>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <Version>1.0.2</Version>
+    <PackageReleaseNotes>Many major bug-fixes</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="winscripter.VariableLengthCodeGenerator.Core" Version="1.0.0" />
+    <PackageReference Include="winscripter.VariableLengthCodeGenerator.Core" Version="1.0.2" />
   </ItemGroup>
-
+		
   <ItemGroup>
     <None Update="README.md">
       <Pack>True</Pack>

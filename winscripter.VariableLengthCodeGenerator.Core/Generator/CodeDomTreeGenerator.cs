@@ -82,20 +82,38 @@ namespace winscripter.VariableLengthCodeGenerator.Core.Generator
             {
                 if (recursionCounter >= 2500)
                     throw new InvalidOperationException("infinite loop! :skull:");
-
-                if (node.Value != null)
+                
+                if (node != null)
                 {
-                    statements.Add(new CodeMethodReturnStatement(new CodePrimitiveExpression(node.Value)));
-                    return;
+                    if (node.Value != null)
+                    {
+                        statements.Add(new CodeMethodReturnStatement(new CodeSnippetExpression(node.Value)));
+                        return;
+                    }
+
+                    var readBitCall = new CodeMethodInvokeExpression(
+                        new CodeVariableReferenceExpression("reader"),
+                        document.ReadBitMethod ?? "ReadBit"
+                    );
+
+                    if (node.One != null || node.Zero != null)
+                    {
+                        var ifStmt = new CodeConditionStatement(
+                            new CodeMethodInvokeExpression(
+                                new CodeVariableReferenceExpression("reader"),
+                                document.ReadBitMethod ?? "ReadBit"
+                            )
+                        );
+
+                        if (node.One != null)
+                            EmitNode(node.One!, ifStmt.TrueStatements, recursionCounter + 1);
+
+                        if (node.Zero != null)
+                            EmitNode(node.Zero!, ifStmt.FalseStatements, recursionCounter + 1);
+
+                        statements.Add(ifStmt);
+                    }
                 }
-
-                var readBitCall = new CodeMethodInvokeExpression(null, $"reader.{document.ReadBitMethod ?? "ReadBit"}");
-                var ifStmt = new CodeConditionStatement(readBitCall);
-
-                EmitNode(node.One!, ifStmt.TrueStatements, recursionCounter + 1);
-                EmitNode(node.Zero!, ifStmt.FalseStatements, recursionCounter + 1);
-
-                statements.Add(ifStmt);
             }
         }
     }

@@ -25,12 +25,6 @@ internal class Program
             return;
         }
 
-        if (File.Exists(targetFile))
-        {
-            WriteRed($"File {targetFile} does not exist");
-            return;
-        }
-
         var sw = Stopwatch.StartNew();
         string contents = File.ReadAllText(sourceFile);
 
