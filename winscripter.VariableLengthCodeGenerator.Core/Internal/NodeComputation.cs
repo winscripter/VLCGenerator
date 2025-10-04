@@ -18,7 +18,7 @@ namespace winscripter.VariableLengthCodeGenerator.Core.Internal
                         : current.One ??= new Node();
                 }
 
-                current.Value = int.Parse(definition.Code);
+                current.Value = definition.Code;
             }
 
             return root;

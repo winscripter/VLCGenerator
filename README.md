@@ -36,7 +36,7 @@ You can configure everything. Namespace, class name, class visibility,
 the type in place of BitReader and BitWriter, and even the method to invoke
 to read/write bits in the type in place of BitReader and BitWriter.
 
-# Syntax
+# Syntax for vlcdef files
 The syntax is very simple. It is Razor-like syntax.
 
 Files with this syntax should be saved under the `.vlcdef` extension.

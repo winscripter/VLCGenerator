@@ -4,6 +4,6 @@
     {
         public Node? Zero;
         public Node? One;
-        public int? Value;
+        public string? Value;
     }
 }

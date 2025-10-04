@@ -67,7 +67,7 @@ namespace winscripter.VariableLengthCodeGenerator.Core.Generator
             void PopulateIf(VlcCodeDefinition cd, CodeConditionStatement cond)
             {
                 cond.Condition = new CodeBinaryOperatorExpression(
-                    new CodeVariableReferenceExpression("valueToEncode"), CodeBinaryOperatorType.ValueEquality, new CodePrimitiveExpression(Convert.ToInt64(cd.Code)));
+                    new CodeVariableReferenceExpression("valueToEncode"), CodeBinaryOperatorType.ValueEquality, new CodeSnippetExpression(cd.Code));
                 foreach (char c in cd.Bits)
                 {
                     cond.TrueStatements.Add(new CodeMethodInvokeExpression(
@@ -83,9 +83,9 @@ namespace winscripter.VariableLengthCodeGenerator.Core.Generator
                 if (recursionCounter >= 2500)
                     throw new InvalidOperationException("infinite loop! :skull:");
 
-                if (node.Value.HasValue)
+                if (node.Value != null)
                 {
-                    statements.Add(new CodeMethodReturnStatement(new CodePrimitiveExpression(node.Value.Value)));
+                    statements.Add(new CodeMethodReturnStatement(new CodePrimitiveExpression(node.Value)));
                     return;
                 }
 
