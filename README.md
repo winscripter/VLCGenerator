@@ -57,7 +57,7 @@ Bits required to encode the VLC can also have spaces in them too. They're option
 2 0101 1000
 3 1001 0011
 ```
-Those are logically equivalent to:
+Those are equivalent to:
 ```
 1 10110100
 2 01011000
