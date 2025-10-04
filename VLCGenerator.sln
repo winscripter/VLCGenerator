@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 18
+VisualStudioVersion = 18.0.11018.127 d18.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VLCCmd", "VLCCmd\VLCCmd.csproj", "{6BEE6F6A-00BD-CE85-E9B6-1DFBE0381264}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "winscripter.VariableLengthCodeGenerator.Core", "winscripter.VariableLengthCodeGenerator.Core\winscripter.VariableLengthCodeGenerator.Core.csproj", "{2F9D31D4-5DC1-B184-8106-A258D3923329}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "winscripter.VariableLengthCodeGenerator.SampleProject", "winscripter.VariableLengthCodeGenerator.SampleProject\winscripter.VariableLengthCodeGenerator.SampleProject.csproj", "{34071C34-7116-C90E-339E-BC4B17B09D25}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "winscripter.VariableLengthCodeGenerator.Tests", "winscripter.VariableLengthCodeGenerator.Tests\winscripter.VariableLengthCodeGenerator.Tests.csproj", "{F6B3C6CA-80A0-6CA1-4117-B4C5FC3E762F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "winscripter.VariableLengthCodeGenerator.Workspace", "winscripter.VariableLengthCodeGenerator.Workspace\winscripter.VariableLengthCodeGenerator.Workspace.csproj", "{1E3C6920-3C80-27A8-39C9-07F0BD90F582}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{089100B1-113F-4E66-888A-E83F3999EAFD}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6BEE6F6A-00BD-CE85-E9B6-1DFBE0381264}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BEE6F6A-00BD-CE85-E9B6-1DFBE0381264}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BEE6F6A-00BD-CE85-E9B6-1DFBE0381264}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BEE6F6A-00BD-CE85-E9B6-1DFBE0381264}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F9D31D4-5DC1-B184-8106-A258D3923329}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F9D31D4-5DC1-B184-8106-A258D3923329}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F9D31D4-5DC1-B184-8106-A258D3923329}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F9D31D4-5DC1-B184-8106-A258D3923329}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34071C34-7116-C90E-339E-BC4B17B09D25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34071C34-7116-C90E-339E-BC4B17B09D25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34071C34-7116-C90E-339E-BC4B17B09D25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34071C34-7116-C90E-339E-BC4B17B09D25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6B3C6CA-80A0-6CA1-4117-B4C5FC3E762F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6B3C6CA-80A0-6CA1-4117-B4C5FC3E762F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6B3C6CA-80A0-6CA1-4117-B4C5FC3E762F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6B3C6CA-80A0-6CA1-4117-B4C5FC3E762F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E3C6920-3C80-27A8-39C9-07F0BD90F582}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E3C6920-3C80-27A8-39C9-07F0BD90F582}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E3C6920-3C80-27A8-39C9-07F0BD90F582}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E3C6920-3C80-27A8-39C9-07F0BD90F582}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
