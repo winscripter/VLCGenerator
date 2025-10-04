@@ -13,14 +13,14 @@
     <PackageProjectUrl>https://github.com/winscripter/VLCGenerator</PackageProjectUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <RepositoryUrl>https://github.com/winscripter/VLCGenerator</RepositoryUrl>
-    <PackageTags>VLC;Variable Length Code;vlcdef;H264;Scaffolding;Code generation;Codegen;Source Generation;Source Generator</PackageTags>
+    <PackageTags>VLC;Variable Length Code;vlcdef;Scaffolding;Code generation;Codegen;Source Generation;Source Generator</PackageTags>
     <PackAsTool>True</PackAsTool>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\winscripter.VariableLengthCodeGenerator.Core\winscripter.VariableLengthCodeGenerator.Core.csproj" />
+    <PackageReference Include="winscripter.VariableLengthCodeGenerator.Core" Version="1.0.0" />
   </ItemGroup>
 
   <ItemGroup>

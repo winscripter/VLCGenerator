@@ -97,9 +97,17 @@ Similarly, `readBitMethod` specifies the name of the method to invoke inside the
 
 The `writerType` and `writeBitMethod` is same as `readerType` and `readBitMethod`, but specific to the `Encode` method and, writing instead of reading.
 
-# In progress
-We're currently in the process of adding `VLCGenerator` to NuGet so anyone can use it. Once adding
-`VLCGenerator` to NuGet is done, we'll document on how to actually generate the code from the VLC generator syntax. Stay tuned!
+# Usage
+Install the `vlcgen` tool from NuGet globally
+```
+dotnet tool install --global vlcgen
+```
+Now, provide your VLCDEF file with the aforementioned syntax. Let's name it `MySerializers.vlcdef`. And let's
+say we want the output C# file to be `MySerializers.g.cs`. Run this command to generate:
+```
+vlcgen MySerializers.vlcdef MySerializers.g.cs
+```
+And that's it! Just drag and drop `MySerializers.g.cs` into your project and you're good to go.
 
 # Use cases
 This generator should be a lifesaver when working on implementing decoders and encoders of specific
