@@ -120,7 +120,7 @@ namespace winscripter.VariableLengthCodeGenerator.Core.DocumentModel
             {
                 if (Options.Any(x => x.Name == name))
                 {
-                    foreach (var option in Options)
+                    foreach (var option in Options.ToList())
                     {
                         if (option.Name == name)
                         {
