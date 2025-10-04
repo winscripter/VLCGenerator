@@ -1,11 +1,10 @@
 ﻿@namespace MyCompany.MyProduct.VlcSerializers
 @class SampleVlcSerializer
 @visibility public
-@readerType IBitstream
+@readerType winscripter.VariableLengthCodeGenerator.SampleProjectIBitstream
 @readBitMethod Read
-@writerType IBitstream
+@writerType winscripter.VariableLengthCodeGenerator.SampleProjectIBitstream
 @writeBitMethod Write
-@usings winscripter.VariableLengthCodeGenerator.SampleProject
 
 0 0
 1 10
