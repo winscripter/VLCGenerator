@@ -42,7 +42,7 @@ The syntax is very simple. It is Razor-like syntax.
 Files with this syntax should be saved under the `.vlcdef` extension.
 
 ## Code definitions
-Those define the VLC. Before the first whitespace is the value of the VLC, and anything afterwards are the bits to encode it. Example:
+Those define the VLC. Prior to the first whitespace is the value of the VLC, and anything afterwards are the bits to encode it. Example:
 ```
 1 101
 2 110
