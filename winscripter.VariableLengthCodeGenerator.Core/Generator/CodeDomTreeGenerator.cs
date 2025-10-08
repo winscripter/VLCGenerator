@@ -67,7 +67,7 @@ namespace winscripter.VariableLengthCodeGenerator.Core.Generator
             void PopulateIf(VlcCodeDefinition cd, CodeConditionStatement cond)
             {
                 cond.Condition = new CodeBinaryOperatorExpression(
-                    new CodeVariableReferenceExpression("valueToEncode"), CodeBinaryOperatorType.ValueEquality, new CodeSnippetExpression(cd.Code));
+                    new CodeVariableReferenceExpression("valueToEncode"), CodeBinaryOperatorType.ValueEquality, new CodeSnippetExpression($"({cd.Code})"));
                 foreach (char c in cd.Bits)
                 {
                     cond.TrueStatements.Add(new CodeMethodInvokeExpression(
