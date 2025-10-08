@@ -17,12 +17,12 @@
     <PackAsTool>True</PackAsTool>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
-    <Version>1.0.2</Version>
-    <PackageReleaseNotes>Many major bug-fixes</PackageReleaseNotes>
+    <Version>1.0.3</Version>
+    <PackageReleaseNotes>Add parenthesized values in if statements in the Encode method</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\winscripter.VariableLengthCodeGenerator.Core\winscripter.VariableLengthCodeGenerator.Core.csproj" />
+    <PackageReference Include="winscripter.VariableLengthCodeGenerator.Core" Version="1.0.3" />
   </ItemGroup>
 		
   <ItemGroup>
